@@ -1,0 +1,69 @@
+:root {
+  --clr-primary-1: #220970;
+  --clr-primary-2: #3d00b7;
+  --clr-primary-4: #5539a8;
+  --clr-primary-3: #2639ed;
+  --clr-primary-9: #d9e0ec33;
+  --clr-primary-8: #696969;
+  --clr-primary-5: #565656;
+  --clr-primary-6: #696969;
+  --clr-primary-7: #757575;
+  --clr-primary-10: #c0c0c0;
+  --clr-black: #000;
+  --clr-white: #ffffff;
+  --clr-red: #ff002e;
+  --clr-green: #14c8b0;
+  --transition: all 0.3s linear;
+  --spacing: 5px;
+  --radius: 60px;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont,
+    Ubuntu, Cantarell, "Integral CF", "DM Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+input {
+  border-radius: 0 !important;
+}
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+/* section */
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
